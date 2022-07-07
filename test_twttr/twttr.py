@@ -1,11 +1,11 @@
 def main():
     text = input("input: ")
-    print(replace_vowels(text))
+    print(shorten(text))
 
-def replace_vowels(txt):
+def shorten(word):
     result = ""
     vowels = "aeiou"
-    for i in txt:
+    for i in word:
         low = i.lower()
         if low in vowels:
             continue
@@ -13,4 +13,5 @@ def replace_vowels(txt):
             result += i
     return result
 
-main()
+if __name__ == "__main__":
+    main()
